@@ -1,0 +1,2951 @@
+﻿生成启动时间为 2013/12/12 17:28:26。
+     1>项目“F:\visual-studio-2012\Projects\Cocos2dxGame\Cocos2dxGame\Cocos2dxGame.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"F:\游戏开发\cocos2d-x-2.2.0\CocosDenshion\include" /I"F:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\third_party\win32\OGLES" /I"F:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32" /I"F:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\third_party\win32\libraries" /I"F:\游戏开发\cocos2d-x-2.2.0\cocos2dx\kazmath\include" /I"F:\游戏开发\cocos2d-x-2.2.0\cocos2dx\include" /I"F:\游戏开发\cocos2d-x-2.2.0\cocos2dx" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Classes\About.cpp ..\Classes\AppDelegate.cpp ..\Classes\Bullet.cpp ..\Classes\Config.cpp ..\Classes\Effect.cpp ..\Classes\Enemy.cpp ..\Classes\GameLayer.cpp ..\Classes\GameOver.cpp ..\Classes\LevelManager.cpp ..\Classes\Options.cpp ..\Classes\PauseLayer.cpp ..\Classes\Ship.cpp ..\Classes\StartMenu.cpp ..\Classes\UnitSprite.cpp Cocos2dxGame.cpp
+         Cocos2dxGame.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\appdelegate.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+         UnitSprite.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\unitsprite.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\unitsprite.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+         StartMenu.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\startmenu.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\startmenu.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\ship.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\unitsprite.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\resource.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\effect.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\gamelayer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\levelmanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\about.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\options.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\startmenu.cpp(91): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\startmenu.cpp(103): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\startmenu.cpp(132): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\startmenu.cpp(142): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\startmenu.cpp(148): warning C4305: “参数”: 从“double”到“float”截断
+         Ship.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\ship.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\ship.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\unitsprite.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\resource.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\bullet.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\effect.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\ship.cpp(55): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\ship.cpp(123): warning C4305: “参数”: 从“double”到“float”截断
+         PauseLayer.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\pauselayer.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\pauselayer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\resource.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Options.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\options.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\options.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\resource.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\startmenu.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\ship.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\unitsprite.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\options.cpp(73): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\options.cpp(126): warning C4305: “参数”: 从“double”到“float”截断
+         LevelManager.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\levelmanager.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\levelmanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\enemy.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\unitsprite.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\gamelayer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\ship.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         GameOver.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\gameover.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\gameover.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\resource.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\gamelayer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\ship.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\unitsprite.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\levelmanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\gameover.cpp(74): warning C4305: “参数”: 从“double”到“float”截断
+         GameLayer.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\gamelayer.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\gamelayer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\ship.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\unitsprite.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\levelmanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\bullet.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\resource.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\enemy.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\effect.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\gameover.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\pauselayer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\gamelayer.cpp(90): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\gamelayer.cpp(249): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\gamelayer.cpp(444): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\gamelayer.cpp(457): warning C4305: “参数”: 从“double”到“float”截断
+         Enemy.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\enemy.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\unitsprite.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\resource.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\bullet.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\effect.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\enemy.cpp(19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\enemy.cpp(96): warning C4305: “参数”: 从“double”到“float”截断
+         Effect.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\effect.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\effect.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\resource.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\effect.cpp(60): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\effect.cpp(67): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\effect.cpp(184): warning C4305: “参数”: 从“double”到“float”截断
+         Config.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+         Bullet.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\bullet.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\bullet.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\unitsprite.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\resource.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\bullet.cpp(27): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\bullet.cpp(79): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\bullet.cpp(80): warning C4305: “参数”: 从“double”到“float”截断
+         AppDelegate.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\appdelegate.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\appdelegate.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\startmenu.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\ship.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\unitsprite.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         About.cpp
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\about.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\about.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(106): warning C4251: “cocos2d::CCPrettyPrinter::_indentStr”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccdatavisitor.h(107): warning C4251: “cocos2d::CCPrettyPrinter::_result”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCPrettyPrinter”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\sprite_nodes\ccspriteframe.h(159): warning C4251: “cocos2d::CCSpriteFrame::m_strTextureFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCSpriteFrame”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\cocoa\ccstring.h(145): warning C4251: “cocos2d::CCString::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCString”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\actions\ccactiontween.h(78): warning C4251: “cocos2d::CCActionTween::m_strKey”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCActionTween”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\ccconfiguration.h(142): warning C4251: “cocos2d::CCConfiguration::s_sConfigfile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelatlas.h(101): warning C4251: “cocos2d::CCLabelAtlas::m_sString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelAtlas”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelttf.h(184): warning C4251: “cocos2d::CCLabelTTF::m_string”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelTTF”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(122): warning C4251: “cocos2d::CCBMFontConfiguration::m_sAtlasName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCBMFontConfiguration”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(277): warning C4251: “cocos2d::CCLabelBMFont::m_sFntFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\label_nodes\cclabelbmfont.h(281): warning C4251: “cocos2d::CCLabelBMFont::m_sInitialStringUTF8”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCLabelBMFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\menu_nodes\ccmenuitem.h(259): warning C4251: “cocos2d::CCMenuItemFont::m_strFontName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCMenuItemFont”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\particle_nodes\ccparticlesystem.h(178): warning C4251: “cocos2d::CCParticleSystem::m_sPlistFile”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCParticleSystem”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(410): warning C4251: “cocos2d::CCFileUtils::m_searchResolutionsOrderArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(416): warning C4251: “cocos2d::CCFileUtils::m_searchPathArray”: class“std::vector<_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(425): warning C4251: “cocos2d::CCFileUtils::m_strDefaultResRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\ccfileutils.h(431): warning C4251: “cocos2d::CCFileUtils::m_fullPathCache”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“cocos2d::CCFileUtils”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=std::string
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(62): warning C4251: “cocos2d::CCApplication::m_resourceRootPath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\platform\win32\ccapplication.h(63): warning C4251: “cocos2d::CCApplication::m_startupScriptFilename”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCApplication”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\user_default\ccuserdefault.h(121): warning C4251: “cocos2d::CCUserDefault::m_sFilePath”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCUserDefault”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxobjectgroup.h(76): warning C4251: “cocos2d::CCTMXObjectGroup::m_sGroupName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXObjectGroup”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(93): warning C4251: “cocos2d::CCTMXLayerInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayerInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(120): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(126): warning C4251: “cocos2d::CCTMXTilesetInfo::m_sSourceImage”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXTilesetInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(225): warning C4251: “cocos2d::CCTMXMapInfo::m_sTMXFileName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(227): warning C4251: “cocos2d::CCTMXMapInfo::m_sResources”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxxmlparser.h(229): warning C4251: “cocos2d::CCTMXMapInfo::m_sCurrentString”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXMapInfo”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\tilemap_parallax_nodes\cctmxlayer.h(204): warning C4251: “cocos2d::CCTMXLayer::m_sLayerName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCTMXLayer”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\游戏开发\cocos2d-x-2.2.0\cocos2dx\support\component\cccomponent.h(70): warning C4251: “cocos2d::CCComponent::m_strName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“cocos2d::CCComponent”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\resource.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\startmenu.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\ship.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\unitsprite.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\about.cpp(53): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\visual-studio-2012\projects\cocos2dxgame\classes\about.cpp(72): warning C4305: “参数”: 从“double”到“float”截断
+         正在生成代码...
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\visual-studio-2012\Projects\Cocos2dxGame\Debug\Cocos2dxGame.exe" /INCREMENTAL /NOLOGO opengl32.lib glew32.lib libcocos2d.lib libCocosDenshion.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\visual-studio-2012\Projects\Cocos2dxGame\Debug\Cocos2dxGame.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\visual-studio-2012\Projects\Cocos2dxGame\Debug\Cocos2dxGame.lib" /MACHINE:X86 Debug\About.obj
+         Debug\AppDelegate.obj
+         Debug\Bullet.obj
+         Debug\Config.obj
+         Debug\Effect.obj
+         Debug\Enemy.obj
+         Debug\GameLayer.obj
+         Debug\GameOver.obj
+         Debug\LevelManager.obj
+         Debug\Options.obj
+         Debug\PauseLayer.obj
+         Debug\Ship.obj
+         Debug\StartMenu.obj
+         Debug\UnitSprite.obj
+         Debug\Cocos2dxGame.obj
+         Cocos2dxGame.vcxproj -> F:\visual-studio-2012\Projects\Cocos2dxGame\Debug\Cocos2dxGame.exe
+     1>已完成生成项目“F:\visual-studio-2012\Projects\Cocos2dxGame\Cocos2dxGame\Cocos2dxGame.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:31.99
