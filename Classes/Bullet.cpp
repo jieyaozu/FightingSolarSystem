@@ -15,6 +15,12 @@ Bullet::Bullet():m_active(true),m_velocityx(0),m_velocityy(200),m_power(1),m_Hp(
 {
     
 }
+
+Bullet::Bullet(int power):m_active(true),m_velocityx(0),m_velocityy(200),m_power(power),m_Hp(1),m_zorder(3000)
+{
+    
+}
+
 /**子弹构造器，可以用create重写下，懒的写了*/
 Bullet::Bullet(int speed, const char *weapon, int attactMode)
 {
@@ -28,8 +34,8 @@ Bullet::Bullet(int speed, const char *weapon, int attactMode)
     m_attackMode = attactMode;
     CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile(s_bullet_plist);
     this->initWithSpriteFrameName(weapon);
-    ccBlendFunc cbl = {GL_SRC_ALPHA, GL_ONE};
-    this->setBlendFunc(cbl);
+   // ccBlendFunc cbl = {GL_ONE_MINUS_DST_COLOR, GL_ONE};
+   // this->setBlendFunc(cbl);
 
 }
 
@@ -57,6 +63,10 @@ bool Bullet::init()
 void Bullet::hurt()
 {
     m_Hp--;
+}
+
+int Bullet::getPower(){
+   return m_power;
 }
 
 void Bullet::destroy()
