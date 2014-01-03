@@ -27,14 +27,18 @@ private:
     int m_zOrder;
     float m_delayTime;
     int m_attackMode;
-    
+    bool m_ishurt;
+	int m_hurtcount;
+	bool m_shader;
 public:
     Enemy();
+	Enemy(int hp);
     ~Enemy();
     bool enemyInit(EnemyType type);
     virtual void update(float dt);
     void shoot(float f);
     virtual void hurt();
+	virtual void hurt(int power);
     virtual void destroy();
     virtual CCRect collideRect();
     virtual bool isActive();
@@ -42,6 +46,9 @@ public:
     static void sharedEnemy();
     static Enemy* create(EnemyType type);
     int getMoveType();
+
+	//设置着色器
+	void setShader(int what);
     
 };
 #endif /* defined(__MoonWarriorsx__Enemy__) */

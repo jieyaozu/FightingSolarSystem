@@ -11,6 +11,7 @@
 
 #include "cocos2d.h"
 #include "Ship.h"
+#include "Boss.h"
 #include "LevelManager.h"
 USING_NS_CC;
 
@@ -27,6 +28,7 @@ private:
     int m_time;
     CCSize winSize;
     Ship *m_ship;
+	Boss *m_boss;
     CCSprite * m_backSky;
     float m_backSkyHeight;
     CCSprite *m_backSkyRe;
@@ -40,6 +42,8 @@ private:
     CCRect m_screenRec;
     LevelManager *m_levelManager;
     int m_tempScore;
+	CCSprite *target;
+	CCSprite *m_targetTwo;
 public:
     GameLayer();
     ~GameLayer();
@@ -49,6 +53,7 @@ public:
     void scoreCounter(float f);
     Ship* getShip();
     void checkIsCollide();
+	void checkBoomCollide();
     void removeInactiveUnit(float dt);
     void checkIsReborn();
     bool collide(UnitSprite *a, UnitSprite *b);
@@ -63,6 +68,7 @@ public:
     virtual void ccTouchMoved(CCTouch* touch, CCEvent* event);
     virtual void ccTouchEnded(CCTouch* touch, CCEvent* event);
 	CCAnimate* getBackAnimate();
+	void shootBoom(CCObject *pSender);
     CREATE_FUNC(GameLayer);
 };
 

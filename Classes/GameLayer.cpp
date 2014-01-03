@@ -15,6 +15,7 @@
 #include "Effect.h"
 #include "GameOver.h"
 #include "PauseLayer.h"
+#include "Boss.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
@@ -29,7 +30,7 @@ CCScene* GameLayer::scene(){
 	return scene;
 }
 
-GameLayer::GameLayer():m_state(statePlaying),m_time(0),m_ship(NULL),m_backSky(NULL),m_backSkyHeight(0),m_backSkyRe(NULL),m_backTileMap(NULL),m_backTileMapHeight(0),m_backTileMapRe(NULL),m_isBackSkyReload(false),m_isBackTileReload(false),m_lbScore(NULL),m_lifeCount(NULL),
+GameLayer::GameLayer():m_state(statePlaying),m_time(0),m_ship(NULL),m_boss(NULL),m_backSky(NULL),m_backSkyHeight(0),m_backSkyRe(NULL),m_backTileMap(NULL),m_backTileMapHeight(0),m_backTileMapRe(NULL),m_isBackSkyReload(false),m_isBackTileReload(false),m_lbScore(NULL),m_lifeCount(NULL),
     m_tempScore(0)
 {
     
@@ -39,7 +40,6 @@ GameLayer::~GameLayer()
     if (m_levelManager) {
         delete m_levelManager;
     }
-    
     play_bullet->release();
     enemy_bullet->release();
     enemy_items->release();
@@ -101,12 +101,15 @@ bool GameLayer::init()
     
     // ship
     m_ship = Ship::create();
+	//m_ship->setTarget(target);
     addChild(m_ship, m_ship->getZoder(), 1001);
     
     CCMenuItemImage *pause = CCMenuItemImage::create(s_pause, s_pause, this, menu_selector(GameLayer::doPause));
     pause->setAnchorPoint(ccp(1, 0));
     pause->setPosition(ccp(winSize.width, 0));
-    CCMenu *menu = CCMenu::create(pause, NULL);
+	CCMenuItemImage *boom = CCMenuItemImage::create(s_pause,s_pause,this,menu_selector(GameLayer::shootBoom));
+	boom->setAnchorPoint(ccp(0,0));
+    CCMenu *menu = CCMenu::create(pause,boom, NULL);
     menu->setAnchorPoint(ccp(0, 0));
     addChild(menu, 1, 10);
     menu->setPosition(CCPointZero);
@@ -117,10 +120,16 @@ bool GameLayer::init()
     // 每秒调一次 scoreCounter函数
     schedule(schedule_selector(GameLayer::scoreCounter), 1);
     
+	m_boss = Boss::create();
+	addChild(m_boss,1000,1000);
+	enemy_items->addObject(m_boss);
+	m_boss->setPosition(ccp(100,650));
+	m_boss->setShipTarget(m_ship);
+
     if (Config::sharedConfig()->getAudioState()) {
         SimpleAudioEngine::sharedEngine()->playBackgroundMusic(s_bgMusic, true);
     }
-    
+
     return true;
 }
 
@@ -134,6 +143,38 @@ void GameLayer::update(float dt)
         removeInactiveUnit(dt);
         checkIsReborn();
         updateUI();
+		//导弹跟踪1
+		if(m_ship){
+			if(!m_ship->getTarget() || !m_ship->getTarget()->isActive()){
+				if((enemy_items->count())>0){
+				   Enemy *targetc = dynamic_cast<Enemy*>(enemy_items->objectAtIndex(0));
+				   m_ship->setTarget(targetc,NULL);
+				}
+			}
+
+			//导弹跟踪2
+			if(!m_ship->getTargetTwo() || !m_ship->getTargetTwo()->isActive()){
+				if((enemy_items->count())>1){
+				   Enemy *targetc = dynamic_cast<Enemy*>(enemy_items->objectAtIndex(enemy_items->count()-1));
+				   m_ship->setTargetTwo(targetc,NULL);
+				}
+			}
+		}
+/*
+		if(m_ship->getTarget()){
+			if(!m_ship->getTarget()->isActive()){
+				//release一次
+				m_ship->getTarget()->release();
+				//然后再置空
+			    m_ship->setTarget(NULL,target);
+			}
+		}
+		*/
+		if(m_ship){
+			if(m_ship->getBomb()){
+			   checkBoomCollide();
+		    }
+		}
     }
     
 }
@@ -142,7 +183,7 @@ void GameLayer::scoreCounter(float f)
 {
     if (m_state == statePlaying) {
         m_time++;
-        m_levelManager->loadLevelResource(m_time);
+        //m_levelManager->loadLevelResource(m_time);
     }
 }
 
@@ -155,7 +196,7 @@ void GameLayer::checkIsCollide()
 		for(int j=play_bullet->count()-1;j>=0;j--){
 			Bullet *bullet = dynamic_cast<Bullet*>(play_bullet->objectAtIndex(j));
             if (this->collide(enemy, bullet)) {
-                enemy->hurt();
+				enemy->hurt(bullet->getPower());
                 bullet->hurt();
             }
             if (!(m_screenRec.intersectsRect(bullet->boundingBox()))) {
@@ -176,12 +217,12 @@ void GameLayer::checkIsCollide()
 	}
 
 	for(int k=enemy_bullet->count()-1;k>=0;k--){
-		UnitSprite *enemyb = dynamic_cast<UnitSprite*>(enemy_bullet->objectAtIndex(k));
+		Bullet *enemyb = dynamic_cast<Bullet*>(enemy_bullet->objectAtIndex(k));
         if (enemyb) {
             if (collide(enemyb, m_ship)) {
                 if (m_ship->isActive()) {
 					enemyb->hurt();
-                    m_ship->hurt();
+                    m_ship->hurt(enemyb->getPower());
                 }
             }
 
@@ -192,23 +233,28 @@ void GameLayer::checkIsCollide()
 	}
 }
 
+void GameLayer::checkBoomCollide(){
+	for(int i=enemy_items->count()-1;i>=0;i--){
+		Enemy *enemy = dynamic_cast<Enemy*>(enemy_items->objectAtIndex(i));
+		if(this->collide(enemy,m_ship->getBomb())){
+			enemy->hurt();
+		}
+	}
+
+	for(int k=enemy_bullet->count()-1;k>=0;k--){
+		UnitSprite *enemyb = dynamic_cast<UnitSprite*>(enemy_bullet->objectAtIndex(k));
+		if (enemyb) {
+			if (collide(enemyb, m_ship->getBomb())) {
+			    enemyb->hurt();
+			}
+		}
+	}
+}
+
 void GameLayer::removeInactiveUnit(float dt)
 {
         
     CCArray *children = this->getChildren();
-    //for (int i = 0; i < children->count(); ++i) {
-    //    CCSprite *selChild =  dynamic_cast<CCSprite*>(children->objectAtIndex(i));
-    //    if (selChild) {
-    //        selChild->update(dt);
-    //        int tag = selChild->getTag();
-    //        if (( tag == 900) || (tag == 901 )|| (tag == 1000)) {
-    //            if (!((UnitSprite*)selChild)->isActive()) {
-				//     //CCLog("destory----------------------------------");
-    //                ((UnitSprite*)selChild)->destroy();
-    //            }
-    //        }
-    //    }
-    //}
     
 	for (int i = children->count()-1; i>=0; i--) {
         UnitSprite *selChild =  dynamic_cast<UnitSprite*>(children->objectAtIndex(i));
@@ -230,7 +276,17 @@ void GameLayer::removeInactiveUnit(float dt)
             m_ship = NULL;
         }
     }
-    
+	//delete boss when it have be destoryed
+	//这里面会出现未知的错误，那就算了不release了
+	//
+	/*
+	if(m_boss){
+		if(!m_boss->isActive()){
+			m_boss->release();
+			m_boss = NULL;
+		}
+	}
+    */
 }
 
 void GameLayer::checkIsReborn()
@@ -238,6 +294,12 @@ void GameLayer::checkIsReborn()
     if (Config::sharedConfig()->getLifeCount() > 0) {
         if (!m_ship) {
                 m_ship = Ship::create();
+				//m_ship->setTarget(target);
+				if(m_boss){
+					if(m_boss->isActive()){
+						m_boss->setShipTarget(m_ship);
+					}		   
+				}
                 this->addChild(m_ship, m_ship->getZoder(), 1001);
         }
         
@@ -330,21 +392,16 @@ void GameLayer::initBackground()
     m_backSky->setAnchorPoint(ccp(0, 0));
     m_backSkyHeight = m_backSky->getContentSize().height;
     addChild(m_backSky, -10);
-    
     // Tile map
     m_backTileMap = CCTMXTiledMap::create(s_level01);
     addChild(m_backTileMap, -9);
     m_backTileMapHeight = m_backTileMap->getMapSize().height * m_backTileMap->getTileSize().height;
-  /*
-	char sdyheight[10];
-	_itoa_s((int)m_backSkyHeight,sdyheight,10);
-	char winheight[10];
-	_itoa_s((int)winSize.height,winheight,10);
 
-	CCLog("ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss");
-    CCLog(sdyheight);
-	CCLog(winheight);
-*/
+	CCSprite* test = CCSprite::create(s_play);
+	test->setPosition(ccp(415,900));
+	m_backTileMap->addChild(test,1);
+
+
     m_backSkyHeight -= 50;
     m_backTileMapHeight -= 200;
     m_backSky->runAction(CCMoveBy::create(3, ccp(0, -50)));
@@ -361,8 +418,7 @@ void GameLayer::initBackground()
 			m_backSkyRe->runAction(CCRepeatForever::create(this->getBackAnimate()));
             m_backSkyRe->setAnchorPoint(ccp(0, 0));
             addChild(m_backSkyRe, -10);
-            m_backSkyRe->setPosition(ccp(0, winSize.height));
-            
+			m_backSkyRe->setPosition(ccp(0, winSize.height));
             // 反转标志位
             m_isBackSkyReload = true;
         }
@@ -471,4 +527,8 @@ void GameLayer::doPause(CCObject *pSender)
 Ship* GameLayer::getShip()
 {
     return m_ship;
+}
+
+void GameLayer::shootBoom(CCObject *pSender){
+	m_ship->addBombChild();
 }

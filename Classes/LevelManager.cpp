@@ -9,6 +9,7 @@
 #include "LevelManager.h"
 #include "Enemy.h"
 #include "GameLayer.h"
+#include "Boss.h"
 
 using namespace cocos2d;
 

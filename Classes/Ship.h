@@ -11,6 +11,8 @@
 
 #include "cocos2d.h"
 #include "UnitSprite.h"
+#include "Enemy.h"
+#include "Bomb.h"
 USING_NS_CC;
 
 class Ship : public UnitSprite{
@@ -48,14 +50,31 @@ private:
     int m_hurtColorLife;
     bool m_active;
     bool m_canBeMove;
+	Enemy *target;
+	Enemy *targetTwo;
+	CCSprite *biaozi;
+	CCSprite *biaoziTwo;
+	Bomb *m_boom;
 public:
     Ship();
     ~Ship();
-    
+	//获得跟踪目标one
+	Enemy* getTarget();
+    //锁定跟踪目标one
+	void setTarget(Enemy *target,CCSprite *bz);
+	//获得跟踪目标Two
+	Enemy* getTargetTwo();
+    //锁定跟踪目标two
+	void setTargetTwo(Enemy *target,CCSprite *bz);
+
     // 被攻击使能
     void makeAttack(CCNode *pSender);
     //开如攻击
 	void startShoot(CCNode *pSender);
+	//开始导弹追踪
+	void startFollowShoot(CCNode *pSender);
+	//导弹追踪
+	void followShoot(float dt);
 	//
 	void startMove(CCNode *pSender);
     // 更新
@@ -70,11 +89,17 @@ public:
     // 被攻击，受伤
     virtual void hurt();
     
+	// 被攻击，受伤
+    virtual void hurt(int power);
+
     // 销毁飞船
     virtual void destroy();
     
     // 获取生存状态
     virtual bool isActive();
+
+	//设置着色器
+	void setShader(int what);
     
     // 碰撞矩形
     virtual CCRect collideRect();
@@ -82,6 +107,14 @@ public:
 	bool isCanBeMove();
     //设置透明与否
 	void setMyOpacity(CCNode *pSender);
+	//boom
+	void addBombChild();
+	UnitSprite* getBomb();
+
+	void killSprite(CCNode *pSender);
+
+	void boomOneSound(CCNode *pSender);
+	void boomTwoSound(CCNode *pSender);
     // 构造器
     CREATE_FUNC(Ship);
 };
