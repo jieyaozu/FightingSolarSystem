@@ -18,22 +18,25 @@ private:
     float m_velocityx;
     float m_velocityy;
     int m_power;
-    int m_Hp;
     int m_attackMode;
     int m_parentType;
+protected:
+	int m_Hp;
 public:
     bool m_active;
     int m_zorder;
     Bullet();
 	~Bullet();
     Bullet(int speed, const char* weapon , int attackMode);
+	Bullet::Bullet(int power);
     virtual bool init();
     virtual void update(float dt);
     virtual void hurt();
     virtual void destroy();
     virtual CCRect collideRect();
     virtual bool isActive();
-    
+	virtual int getPower();
+
     void removeExplode(CCNode *pSender);
     CREATE_FUNC(Bullet);
 };
