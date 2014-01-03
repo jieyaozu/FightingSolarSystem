@@ -160,16 +160,7 @@ void GameLayer::update(float dt)
 				}
 			}
 		}
-/*
-		if(m_ship->getTarget()){
-			if(!m_ship->getTarget()->isActive()){
-				//release一次
-				m_ship->getTarget()->release();
-				//然后再置空
-			    m_ship->setTarget(NULL,target);
-			}
-		}
-		*/
+
 		if(m_ship){
 			if(m_ship->getBomb()){
 			   checkBoomCollide();
