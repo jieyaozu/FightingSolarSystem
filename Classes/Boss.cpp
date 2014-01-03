@@ -2,7 +2,7 @@
 #include "Resource.h"
 #include "BossBullet.h"
 
-Boss::Boss():Enemy(1000),m_bomb(NULL),m_ship_target(NULL){
+Boss::Boss():Enemy(1000,5000),m_bomb(NULL),m_ship_target(NULL){
 	
 }
 

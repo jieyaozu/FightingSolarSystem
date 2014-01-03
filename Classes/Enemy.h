@@ -32,7 +32,7 @@ private:
 	bool m_shader;
 public:
     Enemy();
-	Enemy(int hp);
+	Enemy(int hp,int score);
     ~Enemy();
     bool enemyInit(EnemyType type);
     virtual void update(float dt);
