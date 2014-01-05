@@ -25,6 +25,7 @@ public:
     // flare effect
     void flareEffect(CCNode* parent, CCCallFunc* callback);
     void explode(CCNode *parent, CCPoint pos);
+	void explodeboss(CCNode *parent, CCPoint pos);
     void spark(CCPoint pos, CCNode *parent, float scale, float duration);
     
     void killSprite(CCNode *pSender);
@@ -32,6 +33,7 @@ public:
     
     
     static void sharedExplosion();
+	static void sharedExplosionBoss();
     static Effect* create();
     
 };

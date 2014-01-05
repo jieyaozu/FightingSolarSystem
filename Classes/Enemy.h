@@ -17,19 +17,20 @@ USING_NS_CC;
 
 class Enemy : public UnitSprite {
 private:
-    bool m_active;
     int m_speed;
     int m_bulletSpeed;
     int m_HP;
     int m_bulletPowerValure;
     int m_moveType;
-    int m_scoreValue;
     int m_zOrder;
     float m_delayTime;
     int m_attackMode;
     bool m_ishurt;
 	int m_hurtcount;
 	bool m_shader;
+protected:
+	bool m_active;
+	int m_scoreValue;
 public:
     Enemy();
 	Enemy(int hp,int score);

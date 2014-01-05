@@ -41,6 +41,16 @@ static const char s_boss_one[]          = "../Resources/boss_one.png";
 static const char s_boss_one_bomb[]     = "../Resources/boss_one_bomb.png";
 static const char s_boss_bullet[]       = "../Resources/boss_bullet.png";
 
+
+static const char explosion_boss01[]       = "../Resources/explosion_boss01.png";
+static const char explosion_boss02[]       = "../Resources/explosion_boss02.png";
+static const char explosion_boss03[]       = "../Resources/explosion_boss03.png";
+static const char explosion_boss04[]       = "../Resources/explosion_boss04.png";
+static const char explosion_boss05[]       = "../Resources/explosion_boss05.png";
+static const char explosion_boss06[]       = "../Resources/explosion_boss06.png";
+static const char explosion_boss07[]       = "../Resources/explosion_boss07.png";
+static const char explosion_boss08[]       = "../Resources/explosion_boss08.png";
+
 // font
 static const char s_font[]              = "../Resources/Font/bitmapFontTest.fnt";
 

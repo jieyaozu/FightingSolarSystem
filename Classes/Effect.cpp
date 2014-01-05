@@ -194,3 +194,70 @@ void Effect::killSprite(CCNode *pSender)
     pSender->removeFromParent();
 }
 
+//动画加入缓存
+void Effect::sharedExplosionBoss()
+{
+    CCArray *animFrames = CCArray::create();
+        // 这个sprintf真心很强大啊
+		CCTexture2D * explosionbosstexture = CCTextureCache::sharedTextureCache()->addImage(explosion_boss01);
+		CCSpriteFrame *frame = CCSpriteFrame::createWithTexture(explosionbosstexture,CCRectMake(0, 0, 150, 150));//CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(str);
+        animFrames->addObject(frame);
+  
+		CCTexture2D * explosionbosstexture2 = CCTextureCache::sharedTextureCache()->addImage(explosion_boss02);
+		CCSpriteFrame *frame2 = CCSpriteFrame::createWithTexture(explosionbosstexture2,CCRectMake(0, 0, 150, 150));//CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(str);
+        animFrames->addObject(frame2);
+
+		CCTexture2D * explosionbosstexture3 = CCTextureCache::sharedTextureCache()->addImage(explosion_boss03);
+		CCSpriteFrame *frame3 = CCSpriteFrame::createWithTexture(explosionbosstexture3,CCRectMake(0, 0, 150, 150));//CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(str);
+        animFrames->addObject(frame3);
+
+		CCTexture2D * explosionbosstexture4 = CCTextureCache::sharedTextureCache()->addImage(explosion_boss04);
+		CCSpriteFrame *frame4 = CCSpriteFrame::createWithTexture(explosionbosstexture4,CCRectMake(0, 0, 150, 150));//CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(str);
+        animFrames->addObject(frame4);
+
+		CCTexture2D * explosionbosstexture5 = CCTextureCache::sharedTextureCache()->addImage(explosion_boss05);
+		CCSpriteFrame *frame5 = CCSpriteFrame::createWithTexture(explosionbosstexture5,CCRectMake(0, 0, 150, 150));//CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(str);
+        animFrames->addObject(frame5);
+		animFrames->addObject(frame5);
+
+		CCTexture2D * explosionbosstexture6 = CCTextureCache::sharedTextureCache()->addImage(explosion_boss06);
+		CCSpriteFrame *frame6 = CCSpriteFrame::createWithTexture(explosionbosstexture6,CCRectMake(0, 0, 150, 150));//CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(str);
+        animFrames->addObject(frame6);
+		animFrames->addObject(frame6);
+
+		CCTexture2D * explosionbosstexture7 = CCTextureCache::sharedTextureCache()->addImage(explosion_boss07);
+		CCSpriteFrame *frame7 = CCSpriteFrame::createWithTexture(explosionbosstexture7,CCRectMake(0, 0, 150, 150));//CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(str);
+        animFrames->addObject(frame7);
+		animFrames->addObject(frame7);
+
+		CCTexture2D * explosionbosstexture8 = CCTextureCache::sharedTextureCache()->addImage(explosion_boss08);
+		CCSpriteFrame *frame8 = CCSpriteFrame::createWithTexture(explosionbosstexture8,CCRectMake(0, 0, 150, 150));//CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(str);
+        animFrames->addObject(frame8);
+
+    CCAnimation *animation = CCAnimation::createWithSpriteFrames(animFrames, 0.07);
+    
+    // 帧动画命名
+    CCAnimationCache::sharedAnimationCache()->addAnimation(animation, "ExplosionBoss");
+
+}
+
+void Effect::explodeboss(CCNode *parent, CCPoint pos)
+{
+    // 第一帧
+	// *frame = CCSpriteFrame::create(explosion_boss01,CCRectMake(0, 0, 149, 149));
+	CCSprite *explosion = CCSprite::create();
+	explosion->initWithFile(explosion_boss01);
+    parent->addChild(explosion,1001);
+    explosion->setPosition(pos);
+    
+    CCSize cs = explosion->getContentSize();
+    // 完成之后的回调
+    CCCallFuncN *removeFunc =  CCCallFuncN::create(explosion, callfuncN_selector(Effect::killSprite));
+    
+    
+	 // 爆炸动画
+    CCAnimation *animation = CCAnimationCache::sharedAnimationCache()->animationByName("ExplosionBoss");
+	CCAnimate *animate = CCAnimate::create(animation);
+    explosion->runAction(CCSequence::create(animate, removeFunc, NULL));
+    
+}

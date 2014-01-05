@@ -43,6 +43,7 @@ GameLayer::~GameLayer()
     play_bullet->release();
     enemy_bullet->release();
     enemy_items->release();
+	m_boss->release();
 }
 
 bool GameLayer::init()
@@ -66,6 +67,7 @@ bool GameLayer::init()
     m_state = statePlaying;
     Enemy::sharedEnemy();
     Effect::sharedExplosion();
+	Effect::sharedExplosionBoss();
     
     Config::sharedConfig()->resetConfig();
     
@@ -394,9 +396,9 @@ void GameLayer::initBackground()
 
 
     m_backSkyHeight -= 50;
-    m_backTileMapHeight -= 200;
+    m_backTileMapHeight -= 150;
     m_backSky->runAction(CCMoveBy::create(3, ccp(0, -50)));
-    m_backTileMap->runAction(CCMoveBy::create(3, ccp(0, -200)));
+    m_backTileMap->runAction(CCMoveBy::create(3, ccp(0, -150)));
     
     schedule(schedule_selector(GameLayer:: movingBackground),3);
     
@@ -422,13 +424,13 @@ void GameLayer::initBackground()
 void GameLayer::movingBackground(float f)
 {
     m_backSky->runAction(CCMoveBy::create(3, ccp(0, -50)));
-    m_backTileMap->runAction(CCMoveBy::create(3, ccp(0, -200)));
+    m_backTileMap->runAction(CCMoveBy::create(3, ccp(0, -150)));
     
     // 每次移动48
     m_backSkyHeight -= 50;
     
     // 每次移动200
-    m_backTileMapHeight -= 200;
+    m_backTileMapHeight -= 150;
     
 
     // 图的顶部到达屏幕顶部时
@@ -473,7 +475,7 @@ void GameLayer::movingBackground(float f)
             m_backTileMapRe->setPosition(0, winSize.height);
             m_isBackTileReload = true;
         }
-        m_backTileMapRe->runAction(CCMoveBy::create(3, ccp(0, -200)));
+        m_backTileMapRe->runAction(CCMoveBy::create(3, ccp(0, -150)));
     }
     
     if (m_backTileMapHeight <= 0) {

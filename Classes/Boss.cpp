@@ -1,8 +1,12 @@
 #include "Boss.h"
 #include "Resource.h"
 #include "BossBullet.h"
+#include "Effect.h"
+#include "SimpleAudioEngine.h"
 
-Boss::Boss():Enemy(1000,5000),m_bomb(NULL),m_ship_target(NULL){
+using namespace CocosDenshion;
+
+Boss::Boss():Enemy(100,5000),m_bomb(NULL),m_ship_target(NULL),m_count(0){
 	
 }
 
@@ -18,7 +22,6 @@ bool Boss::init(){
         return false;
     }
 	this->initWithFile(s_boss_one);
-
 	m_bomb = new Enemy();
 	m_bomb->autorelease();
 	m_bomb->initWithFile(s_boss_one_bomb);
@@ -80,4 +83,81 @@ void Boss::shoot(float dt){
 		 getParent()->addChild(bullet, 1000, 900);
 		 bullet->setPosition(position);
 	 }
+}
+
+void Boss::destroy(){
+	if(m_count == 0){
+		this->unschedule(schedule_selector(Boss::calRoat));
+		// 敌机爆炸，从敌机数组删除
+        enemy_items->removeObject(this);
+		//stop the all actions
+		this->stopAllActions();
+		//start new action
+		CCMoveBy *mv = NULL;
+		if(this->getPosition().x<240){
+		   mv = CCMoveBy::create(9, ccp(100, -450));
+		}else{
+		   mv = CCMoveBy::create(9, ccp(-100, -450));
+		}
+		
+		this->runAction(mv);
+		CCCallFuncN *callfun = CCCallFuncN::create(this,callfuncN_selector(Boss::explore));
+		CCCallFuncN *kill = CCCallFuncN::create(this,callfuncN_selector(Boss::killSprite));
+		CCCallFuncN *destroy = CCCallFuncN::create(this,callfuncN_selector(Boss::destroy));
+		CCDelayTime *delay =  CCDelayTime::create(1);
+		CCDelayTime *delay2 =  CCDelayTime::create(0.5);
+		CCDelayTime *delay3 =  CCDelayTime::create(0.3);
+		CCDelayTime *delay4 =  CCDelayTime::create(0.15);
+		CCSequence *sque = CCSequence::create(callfun,delay,callfun,delay2,callfun,delay2,callfun,delay2,
+			                                  callfun,delay3,callfun,delay3,callfun,delay3,callfun,delay3,callfun,
+											  callfun,delay4,callfun,delay4,callfun,delay4,callfun,delay4,callfun,
+											  callfun,delay4,callfun,delay4,callfun,delay4,callfun,delay4,callfun,
+											  callfun,delay4,callfun,delay4,callfun,delay4,callfun,delay4,callfun,
+											  callfun,delay4,callfun,delay4,callfun,delay4,callfun,delay4,callfun,
+											  callfun,delay4,callfun,delay4,callfun,delay4,callfun,delay4,callfun,
+											  callfun,delay4,callfun,delay4,callfun,delay4,callfun,delay4,callfun,
+											  callfun,delay4,callfun,delay4,callfun,delay4,callfun,delay4,callfun,
+											  callfun,delay4,callfun,delay4,kill,callfun,delay4,callfun,delay4,callfun,delay,destroy,NULL);
+		this->runAction(sque);
+	}
+	m_count++;
+	//Enemy::destroy();
+}
+
+void Boss::explore(CCNode *pSender){
+	Effect *effect = Effect::create();
+	CCPoint pos = getPosition();
+	effect->explodeboss(this->getParent(), ccp(pos.x-100+CCRANDOM_0_1()*200,pos.y-50+CCRANDOM_0_1()*100));
+	 // 声音
+    if (Config::sharedConfig()->getEffectState()) {
+            SimpleAudioEngine::sharedEngine()->playEffect(s_explodeEffect);
+			//SimpleAudioEngine::sharedEngine()->playEffect(s_shipDestroyEffect);
+    }
+}
+
+void Boss::killSprite(CCNode *pSender){
+	m_active = false;  
+    // 删除精灵
+	this->setShader(2);
+}
+
+void Boss::destroy(CCNode *pSender){
+    m_active = false;
+    // 更新分数
+    Config::sharedConfig()->setScoreValue(m_scoreValue );
+
+    // 爆炸特效和闪光特效
+    Effect *effect = Effect::create();
+    
+    effect->explode(this->getParent(), getPosition());
+    
+    effect->spark(this->getPosition(),this->getParent(), 1.2, 0.7);
+    
+    // 删除精灵
+    this->removeFromParent();
+    // 声音
+    if (Config::sharedConfig()->getEffectState()) {
+            SimpleAudioEngine::sharedEngine()->playEffect(s_explodeEffect);
+			//SimpleAudioEngine::sharedEngine()->playEffect(s_shipDestroyEffect);
+    }
 }
