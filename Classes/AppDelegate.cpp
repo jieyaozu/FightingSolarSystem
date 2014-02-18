@@ -11,7 +11,9 @@
 #include "cocos2d.h"
 #include "StartMenu.h"
 #include "SimpleAudioEngine.h"
+
 USING_NS_CC;
+
 using namespace CocosDenshion;
 AppDelegate::AppDelegate()
 {
@@ -40,7 +42,8 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     // create a scene. it's an autorelease object
     CCScene *pScene = StartMenu::scene();
-
+	CCFileUtils *fileutils = CCFileUtils::sharedFileUtils();
+	fileutils->fullPathForFilename("");
     // run
     pDirector->runWithScene(pScene);
 
