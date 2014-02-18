@@ -107,9 +107,13 @@ public:
 	bool isCanBeMove();
     //设置透明与否
 	void setMyOpacity(CCNode *pSender);
-	//boom
+	//boom01
 	void addBombChild();
 	UnitSprite* getBomb();
+
+	//boom02
+	void shootBomb();
+	void removeBomb(CCNode *pSender);
 
 	void killSprite(CCNode *pSender);
 

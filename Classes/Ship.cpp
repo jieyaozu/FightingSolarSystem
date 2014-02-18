@@ -13,14 +13,17 @@
 #include "Config.h"
 #include "Effect.h"
 #include "SimpleAudioEngine.h"
+#include "ExplosionFragment.h"
 
-
+using namespace CocosDenshion;
 using namespace cocos2d;
 using namespace std;
 
 Ship::Ship():m_speed(220),m_bulletSpeed(900),m_HP(5),m_bulletTypeValue(1),m_bulletPowerValue(1),m_throwBombing(false),m_canBeAttack(true),m_isThrowBomb(false),m_zOder(3000),m_maxBulletPowerValue(4),m_appearPosition(ccp(0, 0)),m_hurtColorLife(0),m_active(true)
 {
-     
+     //ccBlendFunc cbl = {GL_ONE_MINUS_DST_COLOR, GL_ONE};
+	 ccBlendFunc cbl = {GL_ZERO, GL_ONE};
+     this->setBlendFunc(cbl);
 }
 
 Ship::~Ship()
@@ -36,7 +39,7 @@ bool Ship::init()
     }
     
     // init life
-    CCTexture2D * shipTextureCache = CCTextureCache::sharedTextureCache()->addImage(s_ship01);
+    CCTexture2D * shipTextureCache = CCTextureCache::sharedTextureCache()->textureForKey(s_ship01);
     CCRect rec = CCRectMake(0, 0, 60, 38);
     this->initWithTexture(shipTextureCache,  rec);
     
@@ -47,7 +50,7 @@ bool Ship::init()
 	shadow->initWithFile(s_shadow);
 	this->addChild(shadow);
 	shadow->setPosition(ccp(90,-30));
-	shadow->setScale(0.5f);
+	shadow->setScale(0.8f);
     
     // set frame
     CCSpriteFrame *frame0 = CCSpriteFrame::createWithTexture(shipTextureCache, CCRectMake(0, 0, 60, 38));
@@ -99,26 +102,6 @@ void Ship::update(float dt)
     if (m_HP <= 0) {
         m_active = false;
     }
-/*
-	//为了标明当前锁定目标而加的红框
-	if(target!=NULL && biaozi!=NULL){
-		if(target->isActive()){
-		  //CCLog("%s","============================>ship update()");
-		  CCPoint targetPosition = target->getPosition();
-		  //this->getParent()->addChild(biaozi,3000,901);
-		  biaozi->setPosition(targetPosition);
-		}
-	}
-	//为了标明当前锁定目标而加的红框
-	if(targetTwo!=NULL && biaoziTwo!=NULL){
-		if(targetTwo->isActive()){
-		  //CCLog("%s","============================>ship update()");
-		  CCPoint targetPosition = targetTwo->getPosition();
-		  //this->getParent()->addChild(biaozi,3000,901);
-		  biaoziTwo->setPosition(targetPosition);
-		}
-	}
-	*/
 	if(m_boom){
 		if(!m_boom->isActive()){
 			m_boom->destroy();
@@ -268,8 +251,8 @@ void Ship::hurt()
     if (m_canBeAttack) {
         CCLog("under fire!");
         m_HP--;
-        //this->setColor(ccc3(255, 0, 0));
-		this->setShader(1);
+		this->setColor(ccWHITE);
+		//this->setShader(1);
 		//this->setColor(ccc3(0, 0, 255));
     }
     
@@ -280,8 +263,8 @@ void Ship::hurt(int power)
     if (m_canBeAttack) {
         CCLog("under fire!");
         m_HP = m_HP - power;
-        //this->setColor(ccc3(255, 0, 0));
-		this->setShader(1);
+		this->setColor(ccc3(0,255,0));
+		//this->setShader(1);
 		//this->setColor(ccc3(0, 0, 255));
     }
     
@@ -424,4 +407,46 @@ void Ship::setShader(int what){
         this->getShaderProgram()->updateUniforms();  
         CHECK_GL_ERROR_DEBUG();   
     } while (0);  
+}
+
+void Ship::shootBomb(){
+	CCSprite *bomb = CCSprite::create();
+	bomb->initWithFile(s_fire2);
+	//bomb->setScale(0.15f);
+	this->getParent()->addChild(bomb,10086);
+	CCPoint pos = this->getPosition();
+	bomb->setPosition(pos);
+	//加入粒子效果
+	CCMyParticleSun *sun = CCMyParticleSun::create();
+	bomb->addChild(sun);
+	CCSize size = bomb->getContentSize();
+	sun->setPosition(ccp(size.width/2,size.height/2));
+	//加入动作
+	CCMoveBy *moveby = CCMoveBy::create(0.5,ccp(0,160));
+	CCCallFuncN *callRemove = CCCallFuncN::create(bomb,callfuncN_selector(Ship::removeBomb));
+	//动作由快到慢
+	CCActionInterval* move_ease = CCEaseSineOut::create((CCActionInterval*)(moveby));
+	bomb->runAction(CCSequence::create(moveby,callRemove,NULL));
+}
+
+void Ship::removeBomb(CCNode *pSender){
+	CCParticleSystem *m_emitter = new CCParticleSystemQuad();
+    m_emitter->initWithFile(s_explodingring);
+	this->getParent()->addChild(m_emitter, 1000);
+	m_emitter->setPosition(pSender->getPosition());
+	m_emitter->release();
+
+	ExplosionFragment *fragments = new ExplosionFragment();
+	this->getParent()->addChild(fragments,10001);
+	fragments->setPosition(pSender->getPosition());
+	fragments->initFragments(150);
+	fragments->release();
+
+	pSender->removeFromParent();
+
+	// 声音
+    if (Config::sharedConfig()->getEffectState()) {
+            SimpleAudioEngine::sharedEngine()->playEffect(s_explodeEffect);
+			//SimpleAudioEngine::sharedEngine()->playEffect(s_shipDestroyEffect);
+    }
 }

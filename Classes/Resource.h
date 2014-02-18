@@ -34,13 +34,14 @@ static const char s_pause[]             = "../Resources/pause.png";
 static const char s_play[]              = "../Resources/play.png";
 static const char s_target[]            = "../Resources/sign.png";
 static const char s_fire[]              = "../Resources/fire.png";
+static const char s_fire2[]              = "../Resources/fire2.png";
 static const char s_daodan[]            = "../Resources/daodan.png";
 static const char s_shadow[]            = "../Resources/ship_shadow.png";
 static const char s_boom[]              = "../Resources/boom.png";
 static const char s_boss_one[]          = "../Resources/boss_one.png";
 static const char s_boss_one_bomb[]     = "../Resources/boss_one_bomb.png";
 static const char s_boss_bullet[]       = "../Resources/boss_bullet.png";
-
+static const char s_fragment[]          = "../Resources/fragment.png";
 
 static const char explosion_boss01[]       = "../Resources/explosion_boss01.png";
 static const char explosion_boss02[]       = "../Resources/explosion_boss02.png";
@@ -50,6 +51,8 @@ static const char explosion_boss05[]       = "../Resources/explosion_boss05.png"
 static const char explosion_boss06[]       = "../Resources/explosion_boss06.png";
 static const char explosion_boss07[]       = "../Resources/explosion_boss07.png";
 static const char explosion_boss08[]       = "../Resources/explosion_boss08.png";
+static const char s_explodingring[]        = "../Resources/ExplodingRing.plist";
+static const char s_stars1[]               = "../Resources/stars.png";
 
 // font
 static const char s_font[]              = "../Resources/Font/bitmapFontTest.fnt";
@@ -75,6 +78,7 @@ static const char s_level01[]           = "../Resources/level01.tmx";
 static const char s_Enemy_plist[]       = "../Resources/Enemy.plist";
 static const char s_explosion_plist[]   = "../Resources/explosion.plist";
 static const char s_bullet_plist[]      = "../Resources/bullet.plist";
+static const char s_fragment_particle[] = "../Resources/fragment.plist";
 
 
 #endif

@@ -28,6 +28,7 @@ private:
     bool m_ishurt;
 	int m_hurtcount;
 	bool m_shader;
+	CCSprite *m_glint;
 protected:
 	bool m_active;
 	int m_scoreValue;
@@ -50,6 +51,8 @@ public:
 
 	//设置着色器
 	void setShader(int what);
+
+	void childrenInit();
     
 };
 #endif /* defined(__MoonWarriorsx__Enemy__) */

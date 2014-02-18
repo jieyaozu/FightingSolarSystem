@@ -16,6 +16,8 @@
 #include "GameOver.h"
 #include "PauseLayer.h"
 #include "Boss.h"
+#include "ExplosionFragment.h"
+#include "BossBullet.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
@@ -40,10 +42,13 @@ GameLayer::~GameLayer()
     if (m_levelManager) {
         delete m_levelManager;
     }
+	CCLog("==================== ~GameLayer() =======>");
     play_bullet->release();
     enemy_bullet->release();
     enemy_items->release();
 	m_boss->release();
+	particle_cache->removeAllObjects();
+	CC_SAFE_DELETE(particle_cache);
 }
 
 bool GameLayer::init()
@@ -63,6 +68,9 @@ bool GameLayer::init()
     
     enemy_items = CCArray::create();
     enemy_items->retain();
+
+	particle_cache = CCArray::create();
+	particle_cache->retain();
     
     m_state = statePlaying;
     Enemy::sharedEnemy();
@@ -78,7 +86,6 @@ bool GameLayer::init()
     initBackground();
 
     m_screenRec = CCRectMake(0, 0,  winSize.width, winSize.height + 10);
-    
     // score
     m_lbScore = CCLabelBMFont::create("Score:0", s_arial14_fnt);
     m_lbScore->setAnchorPoint(ccp(1, 0));
@@ -87,7 +94,7 @@ bool GameLayer::init()
     m_lbScore->setPosition(winSize.width - 5, winSize.height - 30);
     
     // ship life
-    CCTexture2D *shipTexture = CCTextureCache::sharedTextureCache()->addImage(s_ship01);
+	CCTexture2D *shipTexture = CCTextureCache::sharedTextureCache()->textureForKey(s_ship01);
     CCSprite *life = CCSprite::createWithTexture(shipTexture, CCRectMake(0, 0, 60, 38));
     life->setScale(0.6);
     life->setPosition(ccp(30,winSize.height-23));
@@ -103,7 +110,6 @@ bool GameLayer::init()
     
     // ship
     m_ship = Ship::create();
-	//m_ship->setTarget(target);
     addChild(m_ship, m_ship->getZoder(), 1001);
     
     CCMenuItemImage *pause = CCMenuItemImage::create(s_pause, s_pause, this, menu_selector(GameLayer::doPause));
@@ -176,12 +182,18 @@ void GameLayer::scoreCounter(float f)
 {
     if (m_state == statePlaying) {
         m_time++;
-        //m_levelManager->loadLevelResource(m_time);
+        m_levelManager->loadLevelResource(m_time);
     }
 }
 
 void GameLayer::checkIsCollide()
 {
+	for(int j=play_bullet->count()-1;j>=0;j--){
+		   Bullet *bullet = dynamic_cast<Bullet*>(play_bullet->objectAtIndex(j));
+	       if (!(m_screenRec.intersectsRect(bullet->boundingBox()))) {
+                bullet->destroy();
+            }
+	}
 	for(int i=enemy_items->count()-1;i>=0;i--){
 
 		Enemy *enemy = dynamic_cast<Enemy*>(enemy_items->objectAtIndex(i));
@@ -379,7 +391,10 @@ void GameLayer::ccTouchEnded(cocos2d::CCTouch *touch, cocos2d::CCEvent *event)
 // 无限滚动地图，采用两张图循环加载滚动
 void GameLayer::initBackground()
 {
-    m_backSky = CCSprite::create(s_bg01);
+    m_backSky = CCSprite::create(s_bg);
+	//m_backSky->setAnchorPoint(ccp(0, 0));
+	//addChild(m_backSky, -10);
+	/**/
     //星空闪烁
 	m_backSky->runAction(CCRepeatForever::create(this->getBackAnimate()));
     m_backSky->setAnchorPoint(ccp(0, 0));
@@ -418,6 +433,7 @@ void GameLayer::initBackground()
         // 第二张图紧接着第一张图滚动
         m_backSkyRe->runAction(CCMoveBy::create(3, ccp(0, -50)));
     }
+	
 }
 
 // 这里就是视差背景了
@@ -523,5 +539,16 @@ Ship* GameLayer::getShip()
 }
 
 void GameLayer::shootBoom(CCObject *pSender){
-	m_ship->addBombChild();
+	//m_ship->addBombChild();
+	m_ship->shootBomb();
+/*
+
+
+    ExplosionFragment *fragments = new ExplosionFragment();
+	this->addChild(fragments,10001);
+	fragments->setPosition(m_ship->getPosition());
+	fragments->initFragments(150);
+	fragments->release();
+	*/
+	
 }

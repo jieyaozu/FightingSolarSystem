@@ -83,6 +83,7 @@ void Bullet::destroy()
 
     play_bullet->removeObject(this);
     enemy_bullet->removeObject(this);
+	this->removeAllChildren();
     this->removeFromParent();
     
     CCCallFuncN *removeExplode =  CCCallFuncN::create(explode, callfuncN_selector(Bullet::removeExplode));

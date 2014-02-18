@@ -12,10 +12,14 @@ private:
 	float c;
 	CCPoint m_targetPosition;
 	CCPoint m_thisPosition;
+	bool m_isrota;
 public:
 	BossBullet(int speed, const char* weapon,CCPoint thisPosition,CCPoint targetPosition);
 	~BossBullet();
 	virtual void update(float dt);
 	void targetMove(int c);
+	void setAngle(float c);
+	float getAngle();
+	void setIsRota(bool is){m_isrota = is;}
 };
 #endif

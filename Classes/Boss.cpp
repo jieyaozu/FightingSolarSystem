@@ -3,10 +3,11 @@
 #include "BossBullet.h"
 #include "Effect.h"
 #include "SimpleAudioEngine.h"
+#include "ExplosionFragment.h"
 
 using namespace CocosDenshion;
 
-Boss::Boss():Enemy(100,5000),m_bomb(NULL),m_ship_target(NULL),m_count(0){
+Boss::Boss():Enemy(3000,5000),m_bomb(NULL),m_ship_target(NULL),m_count(0){
 	
 }
 
@@ -37,6 +38,8 @@ bool Boss::init(){
     this->runAction(CCRepeatForever::create((CCActionInterval*)seq));
 
 	this->schedule(schedule_selector(Boss::calRoat),1);
+
+	childrenInit();
 }
 
 void Boss::update(float dt){
@@ -138,21 +141,37 @@ void Boss::explore(CCNode *pSender){
 void Boss::killSprite(CCNode *pSender){
 	m_active = false;  
     // 删除精灵
-	this->setShader(2);
+	//this->setShader(2);
+	this->setOpacity(0);
+
+	Config::sharedConfig()->setScoreValue(m_scoreValue );
+
+    // 爆炸特效和闪光特效
+    Effect *effect = Effect::create();
+    effect->explode(this->getParent(), getPosition());
+    effect->spark(this->getPosition(),this->getParent(), 1.2, 0.7);
+
+	ExplosionFragment *fragments = new ExplosionFragment();
+	this->getParent()->addChild(fragments,10001);
+	fragments->setPosition(this->getPosition());
+	fragments->initFragments(150);
+	fragments->release();
 }
 
 void Boss::destroy(CCNode *pSender){
     m_active = false;
     // 更新分数
-    Config::sharedConfig()->setScoreValue(m_scoreValue );
+    
+    //粒子特效
+	/*
+	CCParticleSystem *m_emitter = new CCParticleSystemQuad();
+    m_emitter->initWithFile(s_explodingring);
+	this->getParent()->addChild(m_emitter, 1000);
+	m_emitter->setPosition(this->getPosition());
+	m_emitter->release();
+	*/
+	//--------------------------------------------------------------
 
-    // 爆炸特效和闪光特效
-    Effect *effect = Effect::create();
-    
-    effect->explode(this->getParent(), getPosition());
-    
-    effect->spark(this->getPosition(),this->getParent(), 1.2, 0.7);
-    
     // 删除精灵
     this->removeFromParent();
     // 声音

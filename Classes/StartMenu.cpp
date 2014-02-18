@@ -13,6 +13,9 @@
 #include "GameLayer.h"
 #include "About.h"
 #include "Options.h"
+#include "ExplosionFragment.h"
+#include "BossBullet.h"
+#include "util.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
@@ -41,7 +44,7 @@ bool StartMenu::init()
     {
         return false;
     }
-    
+    CCTexture2D *shipTexture = CCTextureCache::sharedTextureCache()->addImage(s_ship01);
     // 添加Android的按键处理，这里加了全局代理
     this->setKeypadEnabled(true);
     CostomeKeyPadDelegae *keyDelegate = new CostomeKeyPadDelegae();
@@ -91,7 +94,7 @@ bool StartMenu::init()
     this->schedule(schedule_selector(StartMenu::update), 0.1);
     
     // ships
-    CCTexture2D *textCache = CCTextureCache::sharedTextureCache()->addImage(s_ship01);
+    CCTexture2D *textCache = CCTextureCache::sharedTextureCache()->textureForKey(s_ship01);
     m_ship = CCSprite::createWithTexture(textCache, CCRectMake(0, 45, 60, 38));
     this->addChild(m_ship, 0, 4);
     CCPoint position = ccp(CCRANDOM_0_1() * winSize.width, 0);
@@ -106,6 +109,39 @@ bool StartMenu::init()
     }
     Config::sharedConfig()->setOptions(false);
 	Config::sharedConfig()->setAbout(false);
+
+	CCSprite* fragment = CCSprite::create();
+	fragment->initWithFile(s_fragment);
+	this->addChild(fragment,1000);
+	fragment->setPosition(ccp(240,300));
+	CCOrbitCamera * orbit = CCOrbitCamera::create(0.3, 1, 0, 0, 360, 0, 0);//(8, 1, 0, 0, 360, 90, -45)
+	fragment->runAction(CCRepeatForever::create(orbit));
+
+	/////////////////////////////////////////////////////////////////////////////
+	CCSprite *sprite = CCSprite::create();
+	sprite->initWithFile(s_fire);
+	this->addChild(sprite,10);
+	sprite->setPosition(ccp(100,200));
+
+	CCMyParticleSun *system = CCMyParticleSun::create();
+	sprite->addChild(system,10);
+	CCSize size = sprite->getContentSize();
+	system->setPosition(ccp(size.width/2,size.height/2));
+
+	CCMoveBy *by = CCMoveBy::create(5,ccp(400,100));
+	CCFiniteTimeAction *seq = CCSequence::create(by,  by->reverse(), NULL);
+	sprite->runAction(CCRepeatForever::create((CCActionInterval*)seq));
+	
+/*
+	CCTexture2D *temp = CCTextureCache::sharedTextureCache()->addImage(s_boss_one);
+	CCTexture2D* texture = Util::getGrayTexture(temp);
+	// create a new CCSprite to return 
+	CCSprite* s = CCSprite::create();  
+    s->initWithTexture(texture);
+	addChild(s,1000);
+	s->setPosition(ccp(200,100));
+	*/
+	
     return true;
 }
 

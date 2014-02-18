@@ -18,6 +18,7 @@ using namespace std;
 extern cocos2d::CCArray *play_bullet;
 extern cocos2d::CCArray *enemy_bullet;
 extern cocos2d::CCArray *enemy_items;
+extern cocos2d::CCArray *particle_cache;
 
 typedef struct Enemies
 {
