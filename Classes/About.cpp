@@ -13,6 +13,7 @@
 
 CCScene* About::scene()
 {
+	//这是测试更改的
     CCScene *scene = CCScene::create();
     About *about = About::create();
     scene->addChild(about);
@@ -39,7 +40,7 @@ bool About::init()
     title->setPosition(ccp(winSize.width/2, winSize.height - 60));
     addChild(title);
     
-    CCLabelTTF *about = CCLabelTTF::create("   I recode this game according to the logic of MoonWarriors-html5,almost all of the code  "
+    CCLabelTTF *about = CCLabelTTF::create("  I recode this game according to the logic of MoonWarriors-html5,almost all of the code  "
 		                                   "keep unanimous with the original. \n     This showcase utilizes many features from Cocos2d-x engine, including: Parallax background, "
 		                                   "tilemap, actions, ease, frame animation, schedule, Labels, keyboard Dispatcher, Scene Transition", 
 										   "Arial", 18, CCSizeMake(winSize.width * 0.85, 320), kCCTextAlignmentLeft);
