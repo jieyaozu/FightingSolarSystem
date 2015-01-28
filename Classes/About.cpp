@@ -14,6 +14,7 @@
 CCScene* About::scene()
 {
 	//这是测试更改的
+	//又是测试的
     CCScene *scene = CCScene::create();
     About *about = About::create();
     scene->addChild(about);
